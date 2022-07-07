@@ -1,0 +1,30 @@
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  font-family: Arial;
+}
+
+input{
+  height: 12.5%;
+  width: 100%;
+  font-size: 300%;
+  text-align: center;
+}
+
+button{
+  height: 12.5%;
+  width: 100%; 
+  color: White;
+  background-color: black;
+}
+
+.center{
+  margin: 0 50%;
+}
+
+.logo{
+  width: 250px;
+  height: 250px;
+}
