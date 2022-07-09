@@ -11,16 +11,6 @@ input{
   height: 50px;
 }
 
-div{
-  /*background-color: whitesmoke;
-  border-radius: 15px;
-  border: solid 3px darkgrey;*/
-  border-left: 2px solid darkgray;
-  margin-top: 5px;
-  margin-left: 4%;
-  padding-left: 1%;
-}
-
 .inline{
   display: inline;
 }
@@ -32,17 +22,19 @@ div{
   float: right;
 }
 
-.diffborder{
-  border-left: 5px solid darkgray;
-  margin-top: 5px;
-  margin-left: 3%;
-  padding-left: 2%;
-}
-
 .wht{
   cursor: pointer;
   margin: 0% 4%;
   display: inline-block;
   border-right: 2px solid darkgray;
   padding-right: 1%;
+}
+
+img{
+  background-image: url('https://thumbs.dreamstime.com/b/transparent-pattern-background-simulation-alpha-channel-png-seamless-gray-white-squares-vector-design-grid-162521286.jpg');
+  background-size: 250px;
+  background-repeat: repeat;
+  float: center;
+  max-width: 25%;
+  height: auto;
 }

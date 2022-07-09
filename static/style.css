@@ -14,6 +14,7 @@ input{
 }
 
 button{
+  cursor: pointer;
   height: 12.5%;
   width: 100%; 
   color: White;

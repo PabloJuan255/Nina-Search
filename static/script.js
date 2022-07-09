@@ -1,21 +1,41 @@
-h1s = document.getElementsByTagName('h1')
+//anim
+divs = document.getElementsByTagName('div')
+for(div in divs){
+  div = divs[div]
+  if(typeof(divs[div]) == 'object'){
+    console.log(div)
+    div.onmouseenter = function(){
+      div.classList.toggle("diffborder");
+    }
+    div.onmouseleaves = function(){
+      div.classList.toggle("diffborder");
+    }
+  }
+}
 
-for(i in h1s){
-    for(j in h1s){
-        if(h1s[i].id !== h1s[j].id && typeof(h1s[j] == 'object')){
-            if(h1s[i].textContent == h1s[j].textContent){
-                h1s[j].parentElement.remove()
+//dont repeat results script
+h2s = document.getElementsByTagName('h2')
+
+for(i in h2s){
+    x = h2s[i]
+    for(j in h2s){
+        y = h2s[j]
+        if(x.id !== y.id && typeof(y == 'object')){
+            if(x.textContent == y.textContent){
+                y.parentElement.remove()
             }
         }
     }
 }
 // Repeating the script to make sure the results wont
 // repeat.
-for(i in h1s){
-    for(j in h1s){
-        if(h1s[i].id !== h1s[j].id && typeof(h1s[j] == 'object')){
-            if(h1s[i].textContent == h1s[j].textContent){
-                h1s[j].parentElement.remove()
+for(i in h2s){
+    x = h2s[i]
+    for(j in h2s){
+        y = h2s[j]
+        if(x.id !== y.id && typeof(y == 'object')){
+            if(x.textContent == y.textContent){
+                y.parentElement.remove()
             }
         }
     }

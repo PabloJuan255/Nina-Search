@@ -1,11 +1,11 @@
 <html>
   <head>
-    <title>Nina - RESULTS</title>
-    <link href="/static/result.css" rel="stylesheet" type="text/css"/>
+    <title>Nina - PICS</title>
+    <link href="/static/pics.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <h1 class="inline">Results for {{ query }}:</h1>
     <img src="/static/nina.jpeg" class="logo">
+    <h1 class="inline">Results for {{ query }}:</h1>
     <hr>
     <div class="diffdiv">
       <h3 class="wht" onclick="location = '/search/' +  location.search">Sites</h3>
@@ -13,7 +13,7 @@
       <h3 class="wht" onclick="alert('Not made yet :) ')">News</h3>
     </div>
     <hr>
-    {% if error %}
+ {% if error %}
     <details>
       <summary>No result was found for {{ error }}.</summary>
       <div>
@@ -23,8 +23,8 @@
     </div>
     </details>
     {% endif %}
-    {{ content|safe }}<br>
-    <p>Generated in {{ time }}ms.</p>
-    <script src="/static/script.js"></script> 
+    {{ content|safe }}
+    <p>Generated in {{ time }}ms</p>
+    <script src="/static/imgscript.js"></script>
   </body>
 </html>
